@@ -527,3 +527,6 @@ _ That means single function name to perform differernt types of tasks.
 				draw(circle)			draw(box)			draw(triangle)
 Fig. cc. Polymorphism	
 
+# Dynamic Binding :
+- Binding refers to linking of a procedure called to the code to be executed in repond to the call.
+- Dynamic binding also known as code binding, means that code associated with the given procedure call is not known until the time of call at runtime.
