@@ -530,3 +530,11 @@ Fig. cc. Polymorphism
 # Dynamic Binding :
 - Binding refers to linking of a procedure called to the code to be executed in repond to the call.
 - Dynamic binding also known as code binding, means that code associated with the given procedure call is not known until the time of call at runtime.
+
+# Message Passing :
+- Object oriented program consist of set of objects that comunicate with each other.
+- Basic Steps are :	1. Creating classes - define objects and behavior
+				2. Creating Object - from class definition
+				3. Establishing Communication - among objects
+- A message for an object is a request for execution of a procedure, which will invoke a function in the recieving object, that generates the desired result.
+- Message passing involves specifying the name of the object, name of the function and information to be sent.
