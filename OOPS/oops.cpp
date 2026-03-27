@@ -18,6 +18,7 @@ void person :: getdata(void)
         cout << "Enter Age: ";
         cin >> age;
 }
+
 void person :: display(void)
 {
     cout << "\nName: " << name;
