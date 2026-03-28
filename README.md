@@ -538,3 +538,9 @@ Fig. cc. Polymorphism
 				3. Establishing Communication - among objects
 - A message for an object is a request for execution of a procedure, which will invoke a function in the recieving object, that generates the desired result.
 - Message passing involves specifying the name of the object, name of the function and information to be sent.
+
+
+In python, everything is an object or instance of a class.
+
+Once the class is defined in Python, the next job is to create the object.			
+The Syntax is : object_name = class_name()
