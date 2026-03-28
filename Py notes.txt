@@ -557,3 +557,6 @@ These access levels specifies the access rights : Any data or function with acce
 - This is the first argument which is added at the beginning of the parameter list.
 - The Self argument refers to the object itself.
 
+# The Class Constructor - the __init__() method
+- This method has a special significance in python classes, it is automatically executed when an object of a class is created. 
+- This method is useful to initialize the variables of the class object.
