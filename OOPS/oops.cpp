@@ -6,19 +6,19 @@ class person
     char name[30];
     int age;
 
-    public:
-        void getdata(void);
-        void display(void);
+    public:  // Access specifier mode
+        void getdata(void); // Member Function
+        void display(void); // Member Function
 };
-
-void person :: getdata(void)
+// Function Definition
+void person :: getdata(void) // Scope Resolution Operator
 {
         cout << "Enter Name: ";
         cin >> name;
         cout << "Enter Age: ";
         cin >> age;
 }
-
+// Function Definition
 void person :: display(void)
 {
     cout << "\nName: " << name;
