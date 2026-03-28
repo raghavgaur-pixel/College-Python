@@ -547,3 +547,13 @@ Once the class is defined in Python, the next job is to create the object.
 The Syntax is : object_name = class_name()
 
 
+Enscapsulations Defines different access levels for data variables and member function of class.
+These access levels specifies the access rights : Any data or function with access level "Public" can be accessed by any function belonging to any class. This is the lowest level of data protection.
+												: Any data or function with access level "Private" can be accessed only by the class in which it is declared, this is the highest level of data protection.
+
+
+# Class Method and Self Argument
+- Class methods are functions defined in the class. Which have first argument name as "Self".
+- This is the first argument which is added at the beginning of the parameter list.
+- The Self argument refers to the object itself.
+
