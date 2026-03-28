@@ -560,3 +560,17 @@ These access levels specifies the access rights : Any data or function with acce
 # The Class Constructor - the __init__() method
 - This method has a special significance in python classes, it is automatically executed when an object of a class is created. 
 - This method is useful to initialize the variables of the class object.
+
+# Class variables and Object Variables
+- Variables are of 2 types, 1. Class Variables
+							2. Object Variables
+
+__Object
+- Class vars are owned by classes and Object vars are owned by each object.
+- If a class has "n" objects, there will be n seperate copies of object variable
+- Object var is not shared with the objects, a change made to the object var by one object will not be reflected in other objects.
+
+__Class
+- If a class has 1 class variable, there will be 1 copy only for that variable.
+- All the objects of the class, will share the class variable.
+- As a single copy of class variable exist, any change made to the class variable by an object will be reflected to other objects.
