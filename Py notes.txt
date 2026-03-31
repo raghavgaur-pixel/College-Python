@@ -587,3 +587,9 @@ __cmp__()  -	This is function is called to compare 2 class objects.
 
 __len__()  -	It is built-in function with syntax len(object).
 				It returns the length of an object.
+
+
+# Public and Private Data Members
+
+Public Variables - Are those variables that are defined in the class and can be accessed from anywhere in the program using dot(.) operator.
+Private Variables - Are those that are defined in the class with a double underscore prefix (__), these vars can be accessed only from within the class.

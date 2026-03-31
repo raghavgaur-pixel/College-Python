@@ -62,7 +62,7 @@ S1 = Sample(15)
 S2 = Sample(35)
 S3 = Sample(45)'''
 
-class ABC():
+'''class ABC():
     def __init__(self, name, var):
         self.name = name
         self.var = var
@@ -83,4 +83,31 @@ if val == 0:
 elif val == -1:
     print("First value is less than second")
 else:
-    print("The second value is less than first")
+    print("The second value is less than first")'''
+
+'''class ABC():
+    def __init__(self, var1, var2):
+        self.var1 = var1
+        self.__var2 = var2
+    def display(self):
+        print("From class method, var1 =", self.var1)
+        print("From class method, var2 =", self.__var2)
+
+obj = ABC(10,20)
+obj.display()
+print("From main module, var1 =", obj.var1)
+print("From main module, var =", obj.__var2)'''
+
+class Sample:
+    def __init__(self, n1, n2):
+        self.n1=n1
+        self.__n2=n2
+    def display(self):
+        print("Class variable 1 =", self.n1)
+        print("Class variable 2 =", self.__n2)
+
+S = Sample(12,14)
+S.display()
+
+print("Value 1 =", S.n1)
+print("Value 2 =", S.__n2)
