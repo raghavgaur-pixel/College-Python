@@ -98,7 +98,7 @@ obj.display()
 print("From main module, var1 =", obj.var1)
 print("From main module, var =", obj.__var2)'''
 
-class Sample:
+'''class Sample:
     def __init__(self, n1, n2):
         self.n1=n1
         self.__n2=n2
@@ -110,4 +110,18 @@ S = Sample(12,14)
 S.display()
 
 print("Value 1 =", S.n1)
-print("Value 2 =", S.__n2)
+print("Value 2 =", S.__n2)'''
+
+class Circle:
+    pi = 3.14
+    def __init__(self, radius):
+        self.radius = radius
+    def area(self):
+        return Circle.pi*(self.radius**2)
+    def circumference(self):
+        return 2*Circle.pi*self.radius
+    
+r = int(input("Enter Radius: "))
+C = Circle(r)
+print("The Area =", C.area())
+print("The Cirucmference =", C.circumference())
