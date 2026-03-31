@@ -574,3 +574,5 @@ __Class
 - If a class has 1 class variable, there will be 1 copy only for that variable.
 - All the objects of the class, will share the class variable.
 - As a single copy of class variable exist, any change made to the class variable by an object will be reflected to other objects.
+
+The del method is automatically called when an object is going out of scope, this is the time when object will no longer be used and it's occupied resources are returned back to the system so that they can be re-used as and when required.
