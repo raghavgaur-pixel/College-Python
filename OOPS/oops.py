@@ -29,12 +29,12 @@ print("Value of x + y = ", S.x+S.y)'''
 S = Student()
 S.process()'''
 
-class ABC():
+'''class ABC():
     class_var = 0
     def __init__(self,var):
         ABC.class_var += 1
         self.var = var
-        print("The Object value is : ", var)
+        print("The Object value is :", var)
         print("The value of class variable is : ", ABC.class_var)
     def __del__(self):
         ABC.class_var -= 1
@@ -45,4 +45,19 @@ obj2 = ABC(20)
 obj3 = ABC(30)
 del obj1
 del obj2
-del obj3
+del obj3'''
+
+class Sample:
+    num = 0
+    def __init__(self,var):
+        Sample.num+=1
+        self.var = var
+        print("The Object Value is =", var)
+        print("The value of class variable is =", Sample.num)
+    def __del__(self):
+        Sample.num-=1
+        print("Object with value", self.var, "is going out of scope.")
+
+S1 = Sample(15)
+S2 = Sample(35)
+S3 = Sample(45)
