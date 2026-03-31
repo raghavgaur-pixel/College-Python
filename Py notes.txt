@@ -576,3 +576,14 @@ __Class
 - As a single copy of class variable exist, any change made to the class variable by an object will be reflected to other objects.
 
 The del method is automatically called when an object is going out of scope, this is the time when object will no longer be used and it's occupied resources are returned back to the system so that they can be re-used as and when required.
+
+# Other Special methods
+
+__repr__() - 	It is a built-in function with syntax repr(object).
+			 	It returns a string representation of an object.
+				The function works on any object not just class instances.
+
+__cmp__()  -	This is function is called to compare 2 class objects.
+
+__len__()  -	It is built-in function with syntax len(object).
+				It returns the length of an object.
