@@ -593,3 +593,83 @@ __len__()  -	It is built-in function with syntax len(object).
 
 Public Variables - Are those variables that are defined in the class and can be accessed from anywhere in the program using dot(.) operator.
 Private Variables - Are those that are defined in the class with a double underscore prefix (__), these vars can be accessed only from within the class.
+
+
+============================================SECTION NOT WRITTEN BY ME=================================================
+
+
+Inheritance - It is the process by which new classes called derived classes are created from existing class called base class. The derived class has all the features of the base class and the programmer can choose to add new features specifically to the newly created derived classes. The idea of inheritance implements "is a relationship". For example - Mammal IS A animal, Dog IS A mammal. Hence, Dog IS A animal.
+
+Features or advantages of Inheritance - i) Reusability of code ii) Saves time and effort iii) Fasteer Development, easier maintanance and easy to extent
+
+Capable of expressing the en and its transitivive nature which ensures closesness with real world problems -
+
+Access control and Inheritance - A dereived class can access all the protected and public members of its base class. It cannot access the private member of the base class.
+
+    Public 
+    ------------                    ➡️➡️ can be inherited by the class class
+    Protected 
+    ------------
+    Private                         ➡️➡️ cannot be inherited by the child class
+
+    Members of the base class     ➡️➡️     Private                          Protected                                             Public
+    \\\\\\\\\\\\\\\\\\\\\\\\\          
+    Inheritance type
+
+            ⬇️
+            ⬇️
+    
+    Private                               Not Inherited         Becomes private to child class                      Becomes private to child class
+
+    Protected                             Not Inherited         Becomes protected members of child class            Becomes protected members of child class
+
+    Public                                Not Inherited         Becomes protected members of child class            Becomes public members of child class
+
+Type of Inheritance - 
+    A                                                       A                 B                                                             A               C)Hierarchical
+   ⬇️       a) Single Inheritance                          ⬇️               ⬇️           b)Multiple Inheritance                           ⬇️                   Inheritance
+    B                                                       ➡️➡️➡️ ⬇️ ⬅️⬅️⬅️                                                ⬇️⬅️⬅️⬅️⬅⬇️➡️➡️➡️➡️⬇️        
+                                                                    ⬇️                                                         ⬇️         ⬇️          ⬇️
+                                                                     C                                                          B           C           D
+
+    A                                                               A
+   ⬇️                                                       ⬅️⬅️⬅️
+    B       d) Multilevel Inheritance                       B               C              e) Hybrid Inheritence
+   ⬇️                                                              ⬇️
+    C                                                               D
+
+Error and exception handling - The program when behaves abnormaly or unexpectedly this event is turned as an error. The common types of error are i) Syntax Error - They occur when the programmer violates the rule of any programming languange. ii) Logical error - Due to poor understanding of a problem and its solution. It specifies all types of errors in which the program executes but gives incorrect results. It may occur due to wrong algorithm or logic. The logical error sometimes leaves to a runtime error which causes the program to terminate abruptly. These types of runtime errors are known as exceptional.
+
+The Exceptions are categorised as i) Synchronous like /0, arrays index of bond, etc. after can be controlled by the program. ii) Asynchronous like an interuption from the keyboard or hardware malfunction or disk failure are caused by events that are beyound the control of the program.
+
+An "execption" is an event which occurs during excecusion of the program and disrupt the normal flow of the program instruction. When a program encounters a situation it cannot with it raaises an exception. Hence, exception is a python object which represents an error. When a program raises an "exception" it must handle the exception or the program will be immediately terminated. The exception in a program is handled usin "try block and except block". A critical operation which can raise exception is placed inside the try block and the code that handle exception is written in except block.
+
+    Exception raised     ➡️     If NO     ➡️     Program excecutes normally
+            ⬇
+    If YES  ⬇
+            ⬇
+    Handler found?     ➡️     If NO     ➡️     The prgram is terminated and an error message is displayed
+            ⬇
+    IF YES  ⬇
+            ⬇
+    Program control is trasferred to handler
+
+=============================================================================================================================
+
+
+# Multiple Except Blocks -
+Python allows multiple except blocks for a single try-block, a try block can be associated with more than 1 except block, with specific handlers for different exceptions, however only 1 handler will be executed.
+Exception handler only handle exceptions, that occur in correspondence with a try block.
+
+syntax =>
+
+try:
+	operations are done in this block
+	.................................
+except Exception1:
+	If there is Exception1, then execute this block.
+except Exception2:
+	If there is Exception2, then execute this block.
+	.................................
+else:
+	If there is no exception then execute this block.
