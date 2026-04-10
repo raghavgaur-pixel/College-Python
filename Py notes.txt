@@ -673,3 +673,20 @@ except Exception2:
 	.................................
 else:
 	If there is no exception then execute this block.
+
+# Except Block without Exception - 
+Except block can be specified without mentioning any exception, such type of except block if present should be the last one which would act as a wild card.
+In a largescale program, sometimes it is difficult to anticipate all types of possible exceptions or exceptional conditions, therefore programmer may be able to write diffrent handler for every individual type of exception, in such a situation it would be better to write a handler that would catch all types of exceptions.
+
+# The Else Clause -
+The try.. except block can have an else: block, that is if there is no exception raised, the else block will run.
+
+
+# Raising Except - 
+An exception can be raised delibrately using the keyword "raise".
+The general syntax for raise statement is :
+	raise[Exception[,args[,traceback]]]
+
+Exception - Is the name of the exception to be raised, for eg; type error, IOerror, name error.
+Args - Is optional and specifies the value for exception arguments, if arguments are not specified then exception argument is NULL.
+traceback - Is optional and if present, traceback for objective used for exception handling.
