@@ -690,3 +690,7 @@ The general syntax for raise statement is :
 Exception - Is the name of the exception to be raised, for eg; type error, IOerror, name error.
 Args - Is optional and specifies the value for exception arguments, if arguments are not specified then exception argument is NULL.
 traceback - Is optional and if present, traceback for objective used for exception handling.
+
+# Instantiating Exception -
+Python allows programmer to instantiate an exception first for raising it and add any attribute to it as desired.
+These attributes can be used for giving additional information about error.
