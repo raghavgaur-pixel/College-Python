@@ -694,3 +694,13 @@ traceback - Is optional and if present, traceback for objective used for excepti
 # Instantiating Exception -
 Python allows programmer to instantiate an exception first for raising it and add any attribute to it as desired.
 These attributes can be used for giving additional information about error.
+
+# Multiple Inheritance
+
+syntax -
+class Base1:
+	statement block
+class Base2:
+	statement block
+class Derived(Base1, Base2):
+	statement block

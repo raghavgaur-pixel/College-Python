@@ -38,9 +38,10 @@ except:
 else:
     print("Program Terminating Succesfully")'''
 
-try:
+'''try:
     num = 10
     print(num)
     raise ValueError
 except ValueError:
-    print("Value Error Occured")
+    print("Value Error Occured")'''
+
