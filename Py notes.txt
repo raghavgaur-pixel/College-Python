@@ -714,4 +714,15 @@ class Derived1(Base):
 	pass
 class Derived2(Derived1):
 	pass
-	
+
+
+# Multi-path Inheritance
+
+(Direct Code)
+
+# Polymorphism and Method Overriding
+
+Polymorphism enables the programmer to assign different meanings or usage to a variable, function or an object in different context.
+It is related to methods, it is applied to functions or methods, depending on the given parameters, perticular form of function that can be selected for execution.
+In python, method overriding is one of the way to implement polymorphism.
+
