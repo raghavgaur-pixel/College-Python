@@ -704,3 +704,14 @@ class Base2:
 	statement block
 class Derived(Base1, Base2):
 	statement block
+
+# Multi Level Inheritance
+
+syntax -
+class Base:
+	pass
+class Derived1(Base):
+	pass
+class Derived2(Derived1):
+	pass
+	
