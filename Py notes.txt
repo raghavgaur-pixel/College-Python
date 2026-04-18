@@ -692,8 +692,10 @@ Args - Is optional and specifies the value for exception arguments, if arguments
 traceback - Is optional and if present, traceback for objective used for exception handling.
 
 # Instantiating Exception -
-Python allows programmer to instantiate an exception first for raising it and add any attribute to it as desired.
+Python allows programmer to instantiate an exception first before raising it and add any attribute to it as desired.
 These attributes can be used for giving additional information about error.
+To Instantiate the exception, the except block will specify a variable, after the exception name, the variable then becomes an exception instance with the arguments stored in instance.args
+The exception instance also has the string method [__str__()] define so that the arguments can be printed directly without using instance.args 
 
 # Multiple Inheritance
 
@@ -726,3 +728,68 @@ Polymorphism enables the programmer to assign different meanings or usage to a v
 It is related to methods, it is applied to functions or methods, depending on the given parameters, perticular form of function that can be selected for execution.
 In python, method overriding is one of the way to implement polymorphism.
 
+# Handling Exceptions in Invoking Function -
+Syntax :
+function_name(arg list):
+	------------------
+	------------------
+try
+	------------------
+	function_name()
+	------------------
+except ExceptionName:
+	------------------
+	// Code to handle exception
+	------------------
+
+----		Throw point    <------|
+|								  |
+|								  |
+|								  |		
+|			Try Block			  |
+|	   Invokes a function   ------|
+|
+|
+|			Except Block
+|--->  Catches and handles exception
+
+
+# Finally Block
+The try block has another optional block called the finally block, which is used to define cleanup actions, that must be executed under all circumstances.
+The finally block is always executed before leaving the try block, this means that the statements written in finally block are executed, irrespective of whether an exception has occured or not.
+So the syntax is :
+try:
+	Write your operations here 
+	--------------------------
+	Due to any exception, operations written here will be skipped
+finally:
+	This would always be executed.
+	--------------------------
+
+# Pre-defined Cleanup Action :
+In python some objects define standard cleanup actions that are automatically performed when the object is no longer needed.
+The default cleanup action is performed irrespective of whether the operation using the object succeeded or failed.
+For eg: Operations in file handling, the file is preffered to open using "with" keyword so that file is automatically closed when not in use.
+
+# Assertion in Python -
+An assertion is a basic check, that can be turned on or off, when the program is being tested. Using the assert statement, an expression is tested and if the result of the expression is false, then an exception is raised.
+Assert statement is inteded for debugging statements, can be seen as abbreviated notion for conditional raised statement.
+In python, assertion is implemented using assert keyword.
+Assertions are usually placed at the start of the function to check for valid input and after a function call, to check for a valid output.
+When the python encounters an assert statement, expression associated with it is calculated and if the expression is false, an "assertion error" is raised.
+
+Syntax - 
+assert expression[args]
+
+Assertion error exceptions can be caught and handled like any other exception using try-except block.
+
+
+# Numpy
+
+Its an open-source numerical library used for working with mathematical function with multi-dimensional array and matrix data structure.
+Numpy stands for Numerical Python.
+
+|| Uses of Numpy :-
+Numpy arrays use less memory than normal python list. A normal python list is a group of pointers to seperate python objects.
+A numpy array is desgined to be an array of uniform values without using extra memory space for type pointers.
+This makes it much more efficient and actually use a lot less memory than a normal python list.

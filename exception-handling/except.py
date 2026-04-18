@@ -45,3 +45,11 @@ else:
 except ValueError:
     print("Value Error Occured")'''
 
+def Divide(num, den):
+    try:
+        quo = num/den
+        print("The quotient is", quo)
+    except ZeroDivisionError:
+        print("You cannot divide a number by zero.")
+
+Divide(10,0)
